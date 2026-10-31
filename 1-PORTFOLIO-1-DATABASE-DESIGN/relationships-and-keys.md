@@ -1,0 +1,89 @@
+# Relationships and Keys
+## Primary Keys
+Each table has a primary key that uniquely identifies each record.
+- Customers: customer-id
+- Addresses: address_id
+- Categories: category_id
+- Suppliers: suppliers-id
+- Products: product_id
+- Orders: order_id
+- Order items: order_item_id
+- Payments: payment_id
+- Deliveries: delivery_id
+- Reviews: review-id
+- ## Foreign Keys
+- Foreign keys are used to connect related tables and maintain referential integrity.
+- Addresses.customer_id references Customers.customer_id
+- Products.category_id references Categories.category_id
+- Products.supplier_id references Suppliers.supplier_id
+- Orders.customer_id references Customers.customer_id
+- OrderItems.order_id references Orders.order_id
+- OrderItems.product_id references Products.product_id
+- Payments.order_id references Orders.order_id
+- Deliveries.order_id references Orders.order_id
+- Deliveries.address_id references Addresses.address_id
+- Reviews.customer_id references Customers.customer_id
+- Reviews.product_id references Products.product-id
+- # Relationships
+- ## Customers and Addresses
+- One customer can have many addresses.
+- Relationship:
+- Customers 1 ---- M Addresses
+- A customer may save multiple delivery addresses, but each address belongs to one customer.
+- ## Customers and Orders
+- One customer can place many orders.
+- Relationship:
+- Customer 1 ----M Orders
+- Each order belongs to one customer.
+- ## Categories and Products
+- One category can contain many products.
+- Relationship:
+- Categories 1 ---- M Products
+- For example, the Electronics category may contain laptops, phones and televisions.
+- Each product belongs to one category.
+- ## Suppliers and Products
+- One supplier can supply many products.
+- Relationship:
+- Suppliers 1 ---- M Products
+- Each product is associated with one supplier in this database design.
+- ## Orders and Order Items
+- One order can contain many order items.
+- Relationship:
+- Orders 1 ---- M OrderItems
+- The OrderItems table allows an order to contain several different products.
+- ## Products and Order Items
+- One product can appear in many order items#
+- Relationship:
+- Products 1 ---- M OrderItems
+- This means the relationship between Orders and Products is many-to-many
+- The orderItems table resolves this many-to-many relationship.
+- ##Orders and Payments
+- One order has one payment record.
+- Relationship:
+- Orders 1 ---- 1 Payments
+- The payment record stores information such as the payment amount, payment method and payment status.
+- ## Orders and Deliveries
+- One order has one delivery record.
+- Relationship:
+- Orders 1 ---- 1 Deliveries
+- The delivery record stores the delivery status, shipping date and delivery date.
+- ## Addresses and Deliveries
+- One address can be used for many deliveries.
+- Relationship:
+- Addresses 1 ---- M Deliveries
+- Each delivery uses one delivery address.
+- ## Customers and Reviews
+- One customer can write many reviews.
+- Relationship:
+- Customers 1 ---- M Reviews
+- Each review belongs to one customer.
+- ## Products and Reviews
+- One product can receive many reviews
+- Relationship:
+- Products 1 ---- M Reviews
+- Each review relates to one product.
+- Many-to-Many Relationship
+- Orders and Products have many-to-many relationship.
+- An order may contain several products, and the same product may appear in many different orders.
+- The OrderItems table resolves this relationships
+- Orders 1 ---- M OrderItems M ---- 1 Products
