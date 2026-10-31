@@ -1,0 +1,67 @@
+# Entities and Attributes
+## Customers
+- customer_id
+- first-name
+- last_name
+- email
+- phone
+- created_at
+- ## Addresses
+- address_id
+- customer_id
+- street
+- city
+- state
+- country
+- postal_code
+- ## Categories
+- category_id
+- category_name
+- derscription
+- ## Suppliers
+- supplier_id
+- supplier_name
+- email
+- phone
+- ## Products
+- product_id
+- category_id
+- supplier_id
+- product_name
+- description
+- price
+- stock_quantity
+- created_at
+- ## Orders
+- order_id
+- customer_id
+- order_date
+- total_amount
+- status
+- ## Order Items
+- order_item_id
+- order_id
+- product_id
+- quantity
+- unit_price
+- ## Payments
+- payment_id
+- order_id
+- payment_date
+- amount
+- payment_method
+- payment_status
+- ## Deliveries
+- delievry_id
+- order_id
+- address_id
+- delivery_status
+- shipped_date
+- delivered_date
+- ## Reviews
+- review_id
+- customer_id
+- product_id
+- rating
+- comment
+- review-date
