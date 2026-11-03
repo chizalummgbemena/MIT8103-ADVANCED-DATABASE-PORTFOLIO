@@ -109,6 +109,5 @@ This portfolio helped me understand the difference between relational and NoSQL 
 
 I learned that MongoDB stores data as flexible documents rather than rows in fixed relational tables.
 
-I also learned how to insert, query, update, delete and aggregate MongoDB documents using MongoDB Compass.
 
 I also learned how to insert, query, update, delete and aggregate MongoDB documents using MongoDB Compass.
