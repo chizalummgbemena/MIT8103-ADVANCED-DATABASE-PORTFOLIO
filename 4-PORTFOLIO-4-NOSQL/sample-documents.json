@@ -1,0 +1,41 @@
+[
+  {
+    "product_id": 1,
+    "product_name": "Wireless Headphones",
+    "category": "Electronics",
+    "supplier": "TechSource Nigeria",
+    "price": 25000,
+    "stock_quantity": 49,
+    "attributes": {
+      "connectivity": "Bluetooth",
+      "colour": "Black",
+      "battery_life": "20 hours"
+    }
+  },
+  {
+    "product_id": 2,
+    "product_name": "Smartphone",
+    "category": "Electronics",
+    "supplier": "TechSource Nigeria",
+    "price": 185000,
+    "stock_quantity": 18,
+    "attributes": {
+      "storage": "128GB",
+      "operating_system": "Android",
+      "colour": "Blue"
+    }
+  },
+  {
+    "product_id": 3,
+    "product_name": "Electric Blender",
+    "category": "Home Appliances",
+    "supplier": "HomePlus Distributors",
+    "price": 32000,
+    "stock_quantity": 35,
+    "attributes": {
+      "speed_levels": 5,
+      "capacity": "1.5L",
+      "colour": "Silver"
+    }
+  }
+]
